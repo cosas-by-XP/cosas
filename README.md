@@ -79,7 +79,7 @@ The cosas app is a unique place to share and enjoy art. There are three componen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="https://imgur.com/a/dczJo8r" width=600>
+<img src="https://imgur.com/a/awQE4rs" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
