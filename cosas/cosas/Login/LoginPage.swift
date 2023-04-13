@@ -14,7 +14,6 @@ class LoginPage: UIViewController {
     
     
     override func viewDidLoad() {
-        print("login loaded")
         super.viewDidLoad()
     }
     
@@ -37,6 +36,12 @@ class LoginPage: UIViewController {
             case .success(let user):
                 print("✅ Successfully logged in as user: \(user)")
 
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                
+                // This is to get the SceneDelegate object from your view controller
+                // then call the change root view controller function to change to main tab bar
+                (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
                 // Post a notification that the user has successfully logged in.
                 NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
 
