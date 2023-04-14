@@ -99,6 +99,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="passwordField" destination="E4i-ga-KPt" id="mgU-Tn-9iL"/>
+                        <outlet property="usernameField" destination="euz-Ah-Mro" id="L0Z-YX-64r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdX-jM-hL2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -305,7 +306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ki8-CQ-0SO">
-                                <rect key="frame" x="24" y="119" width="345" height="300.66666666666669"/>
+                                <rect key="frame" x="24" y="119" width="345" height="300.66666666666663"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-vz-hu9" userLabel="Image-title Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="193.66666666666666"/>
@@ -482,6 +483,7 @@
                                                     </constraints>
                                                 </collectionViewCellContentView>
                                                 <connections>
+                                                    <outlet property="favImageView" destination="1ZX-Dt-gWx" id="93c-gP-hyT"/>
                                                     <outlet property="posterImageView" destination="1ZX-Dt-gWx" id="rzv-eM-whv"/>
                                                 </connections>
                                             </collectionViewCell>
@@ -499,9 +501,18 @@
                             <constraint firstItem="8k1-9O-809" firstAttribute="top" secondItem="sor-iu-ofd" secondAttribute="top" constant="100" id="pKl-cI-x9I"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="hwd-Nk-snb"/>
+                    <navigationItem key="navigationItem" title="Profile" id="hwd-Nk-snb">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="nAc-Qg-yRt">
+                            <color key="tintColor" red="0.27231898900000001" green="0.3285567164" blue="0.38040018079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="onLogoutTapped:" destination="kr1-RG-iBn" id="xn9-YO-ONU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="gPx-dA-N0m" id="FOm-DG-dmC"/>
+                        <outlet property="profilePicView" destination="H50-2a-IsF" id="Jko-oh-z6v"/>
+                        <outlet property="usernameLabel" destination="dOu-dz-lnD" id="jtL-BI-ELC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pge-qo-K7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

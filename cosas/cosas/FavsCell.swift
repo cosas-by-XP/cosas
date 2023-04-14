@@ -10,8 +10,11 @@ import UIKit
 class FavsCell: UICollectionViewCell {
     
     
+    @IBOutlet weak var favImageView: UIImageView!
     
-    @IBOutlet weak var artImageView: UIImageView!
+    func configure(with fav: Art){
+        // favImageView = 
+    }
     
     
 }

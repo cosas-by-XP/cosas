@@ -9,7 +9,9 @@ import ParseSwift
 
 class LoginPage: UIViewController {
 
+    
     @IBOutlet weak var usernameField: UITextField!
+    
     @IBOutlet weak var passwordField: UITextField!
     
     
