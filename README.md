@@ -27,18 +27,18 @@ The cosas app is a unique place to share and enjoy art. There are three componen
 
 **Required Must-have Stories**
 
-* User can create a new account
-* User can login
+* User can create a new account DONE
+* User can login DONE
 * User can view a feed of artworks
 * User can save an artwork
 * User can tap an artwork to view a more detailed art screen with comments, bidding feature, and additional info
-* User can add a comment to a photo
 * User can see their profile page and saved photos
-* User can post a thought in 3D gallery
 
 **Optional Nice-to-have Stories**
 
 * User can place a bid
+* User can add a comment to a photo
+* User can post a thought in 3D gallery
 
 ### 2. Screen Archetypes
 
